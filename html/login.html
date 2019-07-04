@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width" , initial-scale="1">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans&display=swap" rel="stylesheet">
+        <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+           $(".headC").click(function(){
+              $(".headB").slideToggle(); 
+           }); 
+        });
+    </script>
+    <style>
+
+* {
+  box-sizing: border-box;
+}
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px 0 30px 0;
+} 
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+</style>
+</head>
+<body>
+     <header>
+        <div class="container">
+            <div class="small">
+                <a class="headA" href="../index3.html"><img style="height: 50px;" src="../images/logo2.png" alt="logo"></a>
+                <button type="button" class="headC">
+                    <span class="fa fa-bars" title="MENU"></span>
+                </button>
+            </div>
+            <nav class="headB">
+                <ul>
+                    <li><a href="../html/trainersignup.html">강사등록</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="../html/signup.html">회원가입</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container2">
+          <div class="menubar">
+           <nav class="headD"> 
+            <ul>
+                <li><a class="menuLink" href="../html/intro.html">&nbsp;&nbsp;&nbsp;소개&nbsp;&nbsp;&nbsp;</a></li>
+                <li class="dd">
+                    <a class="menuLink" href="#javascript:void(0)" class="dd_btn">&nbsp;&nbsp;&nbsp;프로그램&nbsp;&nbsp;&nbsp;</a>
+                    <div class="dd_content">
+                        <a class="" href="../html/program_1.html">요가</a>
+                        <a href="../html/program_2.html">필라테스</a>
+                        <a href="../html/program_3.html">웨이트트레이닝</a>
+                    </div>
+                </li>
+                <li><a class="menuLink" href="../html/review.html">&nbsp;&nbsp;&nbsp;후기&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a class="menuLink" href="../html/contact.html">&nbsp;&nbsp;&nbsp;문의&nbsp;&nbsp;&nbsp;</a></li>
+                
+            </ul>
+        </nav>
+            </div>
+        </div>
+    </header>
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <h2 style="text-align:center">로그인</h2>
+      <div class="vl">
+        <span class="vl-innertext">or</span>
+      </div>
+
+      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Facebook 계정으로 로그인
+         </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Twitter 계정으로 로그인
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Google+ 계정으로 로그인
+        </a>
+      </div>
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>iFIT 계정으로 로그인</p>
+        </div>
+
+        <input  style="background-color: #f1f1f1"type="text" name="username" placeholder="아이디" required>
+        <input  style="background-color: #f1f1f1"type="password" name="password" placeholder="비밀번호" required>
+        <input  type="submit" value="로그인">
+      </div>
+      
+    </div>
+  </form>
+</div>
+
+<div class="bottom-container">
+  <div class="row">
+    <div class="col">
+      <a href="#" style="color:white" class="btn">회원 가입</a>
+    </div>
+    <div class="col">
+      <a href="#" style="color:white" class="btn">비밀번호 찾기</a>
+    </div>
+  </div>
+</div>
+
+
+<!--   FOOTER     -->
+    <footer>
+        <div style="background-color:rgba(63, 94, 114, 1) " class="container">
+
+            <div class="footA">
+               <div class="foot_logo">
+                <h1 style="letter-spacing: 4px;"><span style="color: white;">i</span>FIT</h1>
+                </div>
+                <div class="sns">
+                <nav class="footB">
+                    <ul>
+                        <li><a href="#">
+                                <span class="fab fa-twitter" title="Twitter"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fab fa-facebook" title="Facebook"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fab fa-google-plus" title="Google Plus"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fab fa-instagram" title="Instagram"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fab fa-youtube" title="YouTube"></span>
+                            </a></li>
+                    </ul>
+
+                </nav>
+                </div>
+                <div class="detail">
+                <p>
+                    상호명 (주)아이핏 &#124; 대표 김정조<br>
+                    사업자등록번호 617-86-27572<br>(아이핏 스튜디오:158-60-00244)<br>
+                    통신판매신고번호 제2017-서울노원-0112호<br>
+                    서울시 강남구 테헤란로410 금강타워 1502호 (주)아이핏<br>
+                    전화문의 02-1234-2587 &#124; 카카오톡 플친 ID. 아이핏<br>
+                    이메일 &#124; help&#64;ifit.co.kr<br>
+                </p>
+                <p>
+                   <br>
+                    <a href="#">이용약관</a> &#124; <a href="#">개인정보취급방침</a> &#124; <a href="#">이용방법</a><br><br>
+                </p>
+                </div>
+
+
+            </div>
+
+
+
+            <div style="text-align: center; font-size: 14px;  
+        color: white;" class="footC">
+                © iFIT corp. All rights reserved. <br><br>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

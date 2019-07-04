@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>iFIT</title>
+    <meta name="viewport" content="width=device-width" , initial-scale="1">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans&display=swap" rel="stylesheet">
+    
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+           $(".headC").click(function(){
+              $(".headB").slideToggle(); 
+           }); 
+        });
+    </script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+    var speed = 800; // 스크롤속도
+    $(".gotop").css("cursor", "pointer").click(function()
+    {
+        $('body, html').animate({scrollTop:0}, speed);
+    });
+});
+</script>
+
+
+</head>
+
+<body>
+   
+<a style="position: fixed; bottom: 10px; right: 10px; 
+        width: 50px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        text-decoration: none;" class="gotop" href="#">top</a>
+
+<!--     Header     -->
+    <header>
+        <div class="container">
+            <div class="small">
+                <a class="headA" href="index3.html"><img style="height: 50px;" src="./images/logo2.png" alt="logo"></a>
+                <button type="button" class="headC">
+                    <span class="fa fa-bars" title="MENU"></span>
+                </button>
+            </div>
+            <nav class="headB">
+                <ul>
+                    <li><a href="./html/trainersignup.html">강사등록</a></li>
+                    <li><a href="./html/login.html">로그인</a></li>
+                    <li><a href="./html/signup.html">회원가입</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container2">
+          <div class="menubar">
+           <nav class="headD"> 
+            <ul>
+                <li><a class="menuLink" href="./html/intro.html">&nbsp;&nbsp;&nbsp;소개&nbsp;&nbsp;&nbsp;</a></li>
+                <li class="dd">
+                    <a class="menuLink" href="#javascript:void(0)" class="dd_btn">&nbsp;&nbsp;&nbsp;프로그램&nbsp;&nbsp;&nbsp;</a>
+                    <div class="dd_content">
+                        <a class="" href="./html/program_1.html">요가</a>
+                        <a href="./html/program_2.html">필라테스</a>
+                        <a href="./html/program_3.html">웨이트트레이닝</a>
+                    </div>
+                </li>
+                <li><a class="menuLink" href="./html/review.html">&nbsp;&nbsp;&nbsp;후기&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a class="menuLink" href="./html/contact.html">&nbsp;&nbsp;&nbsp;문의&nbsp;&nbsp;&nbsp;</a></li>
+                
+            </ul>
+        </nav>
+            </div>
+        </div>
+    </header>
+<!--    HERO IMG     -->
+    <section class="conA_hero">
+        <div class="container">
+<!--            <img src="images/logo.png" alt="">-->
+            <h1 style="color: white;"><span style="color: #3F5F73">i</span>FIT</h1>
+            <p><b>당신의 하루를 더욱 빛나게</b></p>
+            <a href="./html/intro.html">iFIT 시작하기</a>
+        </div>
+    </section>
+    
+<!--    프로그램    -->
+    <section class="conB_pro">
+        <div class="container">
+           <div class="text">
+                <span class="fas fa-heartbeat icon"></span>
+                <h2>요가</h2>
+            <p>명상을 통한 스트레스 완화와 집중력 강화</p>
+            <a href="./html/program_1.html">MORE...<span class="fa fa-chevron-right"></span></a>
+            </div>
+            <div class="text">
+                <span class="fas fa-child icon"></span>
+                <h2>필라테스</h2>
+            <p>건강하고 균형잡힌 몸을 위한 코어 강화 운동</p>
+            <a href="./html/program_2.html">MORE...<span class="fa fa-chevron-right"></span></a>
+            </div>
+            <div class="text">
+                <span class="fas fa-dumbbell icon"></span>
+                <h2>웨이트 트레이닝</h2>
+            <p>근육 강화 및 신체균형 선수 트레이닝</p>
+            <a href="./html/program_3.html">MORE...<span class="fa fa-chevron-right"></span></a>
+            </div>
+        </div>
+    </section>
+    
+<!--    BEST 강사    -->
+    <section class="conC_best">
+       <h1>BEST 강사</h1>
+        <div class="container">
+<div class="gallery">
+  <a  href="./html/program_1.html">
+    <img src="./images/trainer2a.PNG" alt="trainer" >
+    
+  <div class="desc"><p><b>요가 BEST</b></p><p>김요가 강사</p></div></a>
+</div>
+
+<div class="gallery">
+  <a href="./html/program_2.html">
+    <img src="./images/trainer3a.PNG" alt="trainer">
+
+  <div class="desc"><p><b>필라테스 BEST</b></p><p>정필라 강사</p></div>  </a>
+</div>
+
+<div class="gallery">
+  <a href="./html/program_3.html">
+    <img src="./images/trainer1a.PNG" alt="trainer">
+
+  <div class="desc"><p><b>웨이트 BEST</b></p><p>조웨이 강사</p></div>  </a>
+</div>
+
+
+        </div>
+    </section>
+    
+<!--    실시간 후기    -->
+    <section class="conD_re">
+       <h2>실시간 후기</h2>
+        <div class="container">
+            <div class="row">
+            <div class="person"><a href="./html/review.html">
+                    <div class="pro">
+                        <div class="pro_left">
+                            <img src="./images/user.png" class="media-object" style="width:60px">
+                        </div>
+                        <div class="pro_right">
+                            <h4 class="media-heading">정O희</h4>
+                            <p  class="star">★★★★★(5.0)</p>
+                        </div>
+                    </div>
+                    <div class="write">
+                            <p >
+                                걷는거 외에 일부러 운동하는 것을 별로 좋아하지 않았지만 가끔 다리가 굵거나 허리뱃살이 생기는게 싫어서 유튜브를 따라해보기도 했어요. 하지만 이게 과연 제대로 하는건...
+                            <a href="#">리뷰보기
+                                <span class="fa fa-chevron-right"></span>
+                            </a></p>
+                        </div>
+                </a>
+                </div>
+           <div class="person"><a href="./html/review.html">
+                    <div class="pro">
+                        <div class="pro_left">
+                            <img src="./images/user.png" class="media-object" style="width:60px">
+                        </div>
+                        <div class="pro_right">
+                            <h4 class="media-heading">정O희</h4>
+                            <p  class="star">★★★★★(5.0)</p>
+                        </div>
+                    </div>
+                    <div class="write">
+                            <p>
+                                걷는거 외에 일부러 운동하는 것을 별로 좋아하지 않았지만 가끔 다리가 굵거나 허리뱃살이 생기는게 싫어서 유튜브를 따라해보기도 했어요. 하지만 이게 과연 제대로 하는건...
+                            <a href="#">리뷰보기
+                                <span class="fa fa-chevron-right"></span>
+                            </a></p>
+                        </div> </a>
+                </div></div>
+                
+                <div class="row" >
+           <div class="person"><a href="./html/review.html">
+                    <div class="pro">
+                        <div class="pro_left">
+                            <img src="./images/user.png" class="media-object" style="width:60px">
+                        </div>
+                        <div class="pro_right">
+                            <h4 class="media-heading">정O희</h4>
+                            <p class="star">★★★★★(5.0)</p>
+                        </div>
+                    </div>
+                    <div class="write">
+                            <p>
+                                걷는거 외에 일부러 운동하는 것을 별로 좋아하지 않았지만 가끔 다리가 굵거나 허리뱃살이 생기는게 싫어서 유튜브를 따라해보기도 했어요. 하지만 이게 과연 제대로 하는건...
+                            <a href="#">리뷰보기
+                                <span class="fa fa-chevron-right"></span>
+                            </a></p>
+                        </div> </a>
+                </div>
+           <div class="person"><a href="./html/review.html">
+                    <div class="pro">
+                        <div class="pro_left">
+                            <img src="./images/user.png" class="media-object" style="width:60px">
+                        </div>
+                        <div class="pro_right">
+                            <h4 class="media-heading">정O희</h4>
+                            <p  class="star" style="color: color: #BF9075; ">★★★★★(5.0)</p>
+                        </div>
+                    </div>
+                    <div class="write">
+                            <p>
+                                걷는거 외에 일부러 운동하는 것을 별로 좋아하지 않았지만 가끔 다리가 굵거나 허리뱃살이 생기는게 싫어서 유튜브를 따라해보기도 했어요. 하지만 이게 과연 제대로 하는건...
+                            <a href="#">리뷰보기
+                                <span class="fa fa-chevron-right"></span>
+                            </a></p>
+                        </div> </a>
+                </div></div>
+           
+
+        </div>
+    </section>
+    
+<!--    수강료    -->
+    <section class="conE_fee">       
+           <h2>수강료 안내</h2>
+            <hr width="50%">
+        <div class="container">
+            <div class="num">
+					<table>
+						<caption align="top"> <h3>1:1 (개인)</h3> </caption>
+						<tr>
+							<td><span>1회</span></td>
+							<td>8만원</td>
+						</tr>
+						<tr>
+							<td><span>10회</span></td>
+							<td>80만원 <span>▶</span> 64만원(회당 64,000원)</td>
+						</tr>
+						<tr>
+							<td><span>30회</span></td>
+							<td>240만원 <span>▶</span> 18만원(회당 60,000원)</td>
+						</tr>
+					</table>
+				</div>
+				<div class="num">
+					<table>
+						<caption align="top"> <h3>1:2 (듀엣)</h3> </caption>
+						<tr>
+							<td><span>1회</span></td>
+							<td>8만원</td>
+						</tr>
+						<tr>
+							<td><span>10회</span></td>
+							<td>80만원 <span>▶</span> 64만원(회당 64,000원)</td>
+						</tr>
+						<tr>
+							<td><span>30회</span></td>
+							<td>240만원 <span>▶</span> 18만원(회당 60,000원)</td>
+						</tr>
+					</table>
+				</div>
+				<div class="num">
+					<table>
+						<caption align="top"><h3>N:1 (그룹)</h3> </caption>
+						<tr>
+							<td><span>1회</span></td>
+							<td>8만원</td>
+						</tr>
+						<tr>
+							<td><span>10회</span></td>
+							<td>80만원 <span>▶</span> 64만원(회당 64,000원)</td>
+						</tr>
+						<tr>
+							<td><span>30회</span></td>
+							<td>240만원<span>▶</span> 18만원(회당 60,000원)</td>
+						</tr>
+					</table>
+				</div>
+        </div>
+    </section>
+    
+<!--    이용 방법    -->
+    <section class="conF_way">
+        <h2>이용 방법</h2>
+        <div class="container">
+            <div class="text">
+                <h3>STEP 1</h3>
+                <img src="./images/way1.png" alt="step1">
+                <p>아이핏에 온라인 또는 전화상담</p>
+            </div>
+            <div class="text">
+                <h3>STEP 2</h3>
+                <img src="./images/way2.png" alt="step2">
+                <p>강사 및 운동일정 결정</p>
+            </div>
+            <div class="text">
+                <h3>STEP 3</h3>
+                <img src="./images/way3.png" alt="step3">
+                <p>스토어 결제</p>
+            </div>
+            <div class="text">
+                <h3>STEP 4</h3>
+                <img src="./images/way4.png" alt="step4">
+                <p>본 프로그램 수업 진행</p>
+            </div>
+        </div>
+    </section>
+   
+<!--   FOOTER     -->
+    <footer>
+        <div class="container">
+
+            <div class="footA">
+               <div class="foot_logo">
+                <h1 style="letter-spacing: 4px;"><span style="color: white;">i</span>FIT</h1>
+                </div>
+                <div class="sns">
+                <nav class="footB">
+                    <ul>
+                        <li><a href="#">
+                                <span class="fab fa-twitter" title="Twitter"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fab fa-facebook" title="Facebook"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fab fa-google-plus" title="Google Plus"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fab fa-instagram" title="Instagram"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fab fa-youtube" title="YouTube"></span>
+                            </a></li>
+                    </ul>
+
+                </nav>
+                </div>
+                <div class="detail">
+                <p>
+                    상호명 (주)아이핏 &#124; 대표 김정조<br>
+                    사업자등록번호 617-86-27572<br>
+                    (아이핏 스튜디오:158-60-00244)<br>
+                    통신판매신고번호 제2017-서울노원-0112호<br>
+                    서울시 강남구 테헤란로410 금강타워 1502호 (주)아이핏<br>
+                    전화문의 02-1234-2587 &#124; 카카오톡 플친 ID. 아이핏<br>
+                    이메일 &#124; help&#64;ifit.co.kr<br>
+                </p>
+                <p>
+                   <br>
+                    <a href="#">이용약관</a> &#124; <a href="#">개인정보취급방침</a> &#124; <a href="#">이용방법</a><br><br>
+                </p>
+                </div>
+
+
+            </div>
+
+
+
+            <div style="text-align: center; font-size: 14px;  
+        color: white;" class="footC">
+                © iFIT corp. All rights reserved. <br><br>
+            </div>
+
+        </div>
+    </footer>
+    
+            <!--top button-->
+    <script>
+        console.log(window.scrollTop);
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 200) {
+                    $('#moveTop').fadeIn();
+                } else {
+                    $('#moveTop').fadeOut();
+                }
+            });
+        });
+        
+        $('#moveTop').click(function(){
+            $('html,body').animate({scrollTop:0},800);
+        });
+    </script>
+</body>
+
+</html>

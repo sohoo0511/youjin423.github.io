@@ -1,0 +1,27 @@
+/* Color Theme Swatches in Hex */
+.Bloom---New-York-1-hex { color: #2A2740; }
+.Bloom---New-York-2-hex { color: #3F5F73; }
+.Bloom---New-York-3-hex { color: #D9D8D7; }
+.Bloom---New-York-4-hex { color: #D9BBA0; }
+.Bloom---New-York-5-hex { color: #BF9075; }
+
+/* Color Theme Swatches in RGBA */
+.Bloom---New-York-1-rgba { color: rgba(42, 38, 63, 1); }
+.Bloom---New-York-2-rgba { color: rgba(63, 94, 114, 1); }
+.Bloom---New-York-3-rgba { color: rgba(216, 216, 214, 1); }
+.Bloom---New-York-4-rgba { color: rgba(216, 186, 160, 1); }
+.Bloom---New-York-5-rgba { color: rgba(191, 144, 116, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Bloom---New-York-1-hsla { color: hsla(247, 24, 20, 1); }
+.Bloom---New-York-2-hsla { color: hsla(202, 29, 34, 1); }
+.Bloom---New-York-3-hsla { color: hsla(45, 2, 84, 1); }
+.Bloom---New-York-4-hsla { color: hsla(28, 42, 73, 1); }
+.Bloom---New-York-5-hsla { color: hsla(22, 36, 60, 1); }
+
+
+/* 폰트 */
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans&display=swap" rel="stylesheet">
+
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Open Sans', sans-serif;

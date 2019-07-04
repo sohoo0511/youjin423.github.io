@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+<meta name="viewport" content="width=device-width" , initial-scale="1">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans&display=swap" rel="stylesheet">
+        <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+           $(".headC").click(function(){
+              $(".headB").slideToggle(); 
+           }); 
+        });
+    </script>
+
+    <style>
+body {
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+        .all{margin-left: auto;margin-right: auto;
+            margin-bottom: 20px; margin-top: 20px;
+            width: 80%;
+  border-radius: 5px;
+            border: 2px solid grey;
+        }
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: white;;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+   
+     <header>
+        <div class="container">
+            <div class="small">
+                <a class="headA" href="../index3.html"><img style="height: 50px;" src="../images/logo2.png" alt="logo"></a>
+                <button type="button" class="headC">
+                    <span class="fa fa-bars" title="MENU"></span>
+                </button>
+            </div>
+            <nav class="headB">
+                <ul>
+                    <li><a href="#">강사등록</a></li>
+                    <li><a href="../html/login.html">로그인</a></li>
+                    <li><a href="../html/signup.html">회원가입</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container2">
+          <div class="menubar">
+           <nav class="headD"> 
+            <ul>
+                <li><a class="menuLink" href="../html/intro.html">&nbsp;&nbsp;&nbsp;소개&nbsp;&nbsp;&nbsp;</a></li>
+                <li class="dd">
+                    <a class="menuLink" href="#javascript:void(0)" class="dd_btn">&nbsp;&nbsp;&nbsp;프로그램&nbsp;&nbsp;&nbsp;</a>
+                    <div class="dd_content">
+                        <a class="" href="../html/program_1.html">요가</a>
+                        <a href="../html/program_2.html">필라테스</a>
+                        <a href="../html/program_3.html">웨이트트레이닝</a>
+                    </div>
+                </li>
+                <li><a class="menuLink" href="../html/review.html">&nbsp;&nbsp;&nbsp;후기&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a class="menuLink" href="../html/contact.html">&nbsp;&nbsp;&nbsp;문의&nbsp;&nbsp;&nbsp;</a></li>
+                
+            </ul>
+        </nav>
+            </div>
+        </div>
+    </header>
+    <div class="all">
+        <form action="/action_page.php">
+  <div class="container">
+    <h1 style="text-align: center;">강사 등록</h1>
+    <p> 강사 정보를 입력해주세요.</p>
+    <hr>
+
+    <label for="email"><b>아이디</b></label>
+    <input type="text" placeholder="아이디를 입력하세요" name="email" required>
+    
+    <label for="email"><b>이메일</b></label>
+    <input type="text" placeholder="aaaaa@aaa.aaa" name="email" required>
+
+    <label for="psw"><b>비밀번호</b></label>
+    <input type="password" placeholder="비밀번호를 입력하세요" name="psw" required>
+
+    <label for="psw-repeat"><b>비밀번호 재입력</b></label>
+    <input type="password" placeholder="비밀번호를 다시 입력하세요" name="psw-repeat" required>
+    <hr>
+    <p><a href="#">이용약관</a>에 동의하신다면 가입하기를 눌러주세요.</p>
+
+    <button type="submit" class="registerbtn">가입하기</button>
+  </div>
+  
+  <div class="container signin">
+    <p>이미 계정이 있다면 <a href="#">로그인 하러가기</a></p>
+  </div>
+</form>
+    </div>
+    
+    
+<!--   FOOTER     -->
+    <footer>
+        <div style="background-color:rgba(63, 94, 114, 1) " class="container">
+
+            <div class="footA">
+               <div class="foot_logo">
+                <h1 style="letter-spacing: 4px;"><span style="color: white;">i</span>FIT</h1>
+                </div>
+                <div class="sns">
+                <nav class="footB">
+                    <ul>
+                        <li><a href="#">
+                                <span class="fab fa-twitter" title="Twitter"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fab fa-facebook" title="Facebook"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fab fa-google-plus" title="Google Plus"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fab fa-instagram" title="Instagram"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fab fa-youtube" title="YouTube"></span>
+                            </a></li>
+                    </ul>
+
+                </nav>
+                </div>
+                <div class="detail">
+                <p>
+                    상호명 (주)아이핏 &#124; 대표 김정조<br>
+                    사업자등록번호 617-86-27572<br>(아이핏 스튜디오:158-60-00244)<br>
+                    통신판매신고번호 제2017-서울노원-0112호<br>
+                    서울시 강남구 테헤란로410 금강타워 1502호 (주)아이핏<br>
+                    전화문의 02-1234-2587 &#124; 카카오톡 플친 ID. 아이핏<br>
+                    이메일 &#124; help&#64;ifit.co.kr<br>
+                </p>
+                <p>
+                   <br>
+                    <a href="#">이용약관</a> &#124; <a href="#">개인정보취급방침</a> &#124; <a href="#">이용방법</a><br><br>
+                </p>
+                </div>
+
+
+            </div>
+
+
+
+            <div style="text-align: center; font-size: 14px;  
+        color: white;" class="footC">
+                © iFIT corp. All rights reserved. <br><br>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
